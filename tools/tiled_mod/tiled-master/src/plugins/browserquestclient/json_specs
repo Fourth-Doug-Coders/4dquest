@@ -1,0 +1,58 @@
+TDRoot:
+  height: number
+  width: number
+  orientation: string
+  tileheight: number
+  tilewidth: number
+  properties: object
+  version: number
+
+  tilesets: array
+    name: string
+    firstgid: number
+    image: string
+    imageheight: number
+    imagewidth: number
+    margin: number
+    properties: object
+    spacing: number
+    tileheight: number
+    tilewidth: number
+    tileproperties: object
+
+  layers: array
+    data: array
+    height: number
+    name: string
+    opacity: number
+    type: string
+    visible: boolean
+    width: number
+    x: number
+    y: number
+
+BQRoot:
+  map:
+    height: number
+    width: number
+    orientation: string
+    tileheight: number
+    tilewidth: number
+    version: string
+
+    tileset: array
+      name: string
+      firstgid: number
+      tileheight: number
+      tilewidth: number
+      image: array
+        source: string
+        height: number
+        width: number
+      tile: array
+        id: number
+        properties: object
+          {'property': object}
+            name: string
+            value: varies
+
